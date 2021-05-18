@@ -8,10 +8,9 @@ class MyBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: 20,left: 20),
-      child: Column(
-        children: [
+      child: ListView(
+        children:<Widget> [
           HeadLine(title: "Giá",),
-          SizedBox(height: 10,),
           CheckBoxLine(content: "Dưới 100.000",),
           CheckBoxLine(content: "Từ 100 - 300 nghìn"),
           CheckBoxLine(content: "Từ 300 - 500 nghìn",),
@@ -22,7 +21,6 @@ class MyBody extends StatelessWidget {
               color: Colors.grey,
             ),),
           HeadLine(title: "Nhãn hiệu",),
-          SizedBox(height: 10,),
           CheckBoxLine(content: "CLASI",),
           CheckBoxLine(content: "ALIBABA",),
           CheckBoxLine(content: "MY LAN",),
@@ -32,7 +30,6 @@ class MyBody extends StatelessWidget {
               color: Colors.grey,
             ),),
           HeadLine(title: "Trạng thái",),
-          SizedBox(height: 10,),
           CheckBoxLine(content: "Mới về",),
           CheckBoxLine(content: "Nổi bật",),
           CheckBoxLine(content: "Đang giảm giá",),
